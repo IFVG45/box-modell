@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+}
+
+
+/*inline: allows other elements beside on the same line padding,margin,width dont work as
+expected.
+
+block:take up one whole line in the browser window padding,margin,width
+work as expected
+
+inline-block: allow other elements beside on the same line.
+*/
+
+
+h1{
+  background-color: red;
+
+  /*start at top and go clockwise; top,right,bottom,left*/
+  padding: 1em 2em 3em 0.5em;
+
+  margin: 0 1em; /* top/bottom  left/right*/
+
+  border:5px dotted #000;
+
+  border-radius:10 px;
+
+  display: inline-block;
+
+}
+
+a{
+  background-color: yellow;
+  display: block;
+
+}
+
+
+ nav{
+ background-color: hotpink;
+ text-align: center;
+
+}
+
+ nav ul{
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+
+ }
+
+ nav li{
+   display: inline;
+
+ }
+
+  nav a{
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    background-color: magenta;
+    color: white;
+    text-decoration: underline;
+
+  }
